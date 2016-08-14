@@ -266,7 +266,7 @@ the .elc exists. Also discard .elc without corresponding .el"
 ;;; Look and feel
 (require 'init-look-and-feel)   ; fonts, UI, keybindings, saving files etc.
 (require 'init-font-lock)       ; enables/disables font-lock globally.
-(require 'init-linum)           ; line numbers
+;;(require 'init-linum)           ; line numbers
 (when exordium-smooth-scroll    ; smooth scroll
   (require 'init-smooth-scroll)
   (smooth-scroll-mode 1))
@@ -353,10 +353,10 @@ the .elc exists. Also discard .elc without corresponding .el"
 (update-progress-bar)
 
 ;;; Greetings
-(setq initial-scratch-message
-      (let ((current-user (split-string (user-full-name) " ")))
-        (format ";; Happy hacking %s!
+;; (setq initial-scratch-message
+;;       (let ((current-user (split-string (user-full-name) " ")))
+;;         (format ";; Happy hacking %s!
 
-" (if current-user (car current-user) exordium-current-user))))
+;; " (if current-user (car current-user) exordium-current-user))))
 
 ;;; End of file
