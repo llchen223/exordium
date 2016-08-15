@@ -359,4 +359,6 @@ the .elc exists. Also discard .elc without corresponding .el"
 
 ;; " (if current-user (car current-user) exordium-current-user))))
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;;; End of file
