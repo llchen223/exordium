@@ -361,4 +361,15 @@ the .elc exists. Also discard .elc without corresponding .el"
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(defun close-all-buffers ()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
+
+(defun kill-other-buffers ()
+    "Kill all other buffers."
+    (interactive)
+    (mapc 'kill-buffer 
+          (delq (current-buffer) 
+                (remove-if-not 'buffer-file-name (buffer-list)))))
+
 ;;; End of file

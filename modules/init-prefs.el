@@ -174,7 +174,7 @@ i.e., with git pull."
 
 ;;; Themes -- see themes directory
 
-(defcustom exordium-theme 'tomorrow-night
+(defcustom exordium-theme 'material
   "Theme to load on startup. Use nil to not load any theme,
 otherwise use one of the following:
 - tomorrow-day, tomorrow-night, tomorrow-night-bright,
